@@ -15,7 +15,7 @@ def emotion_detector(text_to_analyze):
     fear = emotions['fear']
     joy = emotions['joy']
     sadness = emotions['sadness']
-    dominant_emotion = max(emotions)
+    dominant_emotion = max(emotions, key=emotions.get)
 
 
     return {
